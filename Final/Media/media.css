@@ -1,0 +1,419 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: meiryo;
+}
+
+.doorleft{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    background-image: url('d1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.doorright{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    background-image: url('d2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.door1{
+    animation: left1 1s 1s forwards linear 1;
+    z-index: 3;
+}
+
+.door2{
+    animation: right1 1s 1s forwards linear 1;
+    z-index: 3;
+}
+
+.door3{
+    animation: left2 1s 1.2s forwards linear 1;
+    z-index: 2;
+}
+
+.door4{
+    animation: right2 1s 1.2s forwards linear 1;
+    z-index: 2;
+}
+
+.door5{
+    animation: left3 1s 1.4s forwards linear 1;
+    z-index: 1;
+}
+
+.door6{
+    animation: right3 1s 1.4s forwards linear 1;
+    z-index: 1;
+}
+
+@keyframes left1{
+    0%{
+        transform: translateX(0);
+    }
+    10%{
+        transform: translateX(-2%);
+    }
+    80%{
+        transform: translateX(-4%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes left2{
+    0%{
+        transform: translateX(0);
+    }
+    10%{
+        transform: translateX(-1.6%);
+    }
+    60%{
+        transform: translateX(-3.2%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes left3{
+    0%{
+        transform: translateX(0);
+    }
+    10%{
+        transform: translateX(-1.2%);
+    }
+    40%{
+        transform: translateX(-2.4%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes right1{
+    0%{
+        transform: translateX(0);
+    }
+    10%{
+        transform: translateX(2%);
+    }
+    80%{
+        transform: translateX(4%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+@keyframes right2{
+    0%{
+        transform: translateX(0);
+    }
+    10%{
+        transform: translateX(1.6%);
+    }
+    60%{
+        transform: translateX(3.2%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+@keyframes right3{
+    0%{
+        transform: translateX(0);
+    }
+    10%{
+        transform: translateX(1.2%);
+    }
+    40%{
+        transform: translateX(2.4%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+.container{
+    margin: 0;
+    width: 100%;
+    height: fit-content;
+    background-color: transparent;
+    display: block;
+}
+
+.background{
+    position: fixed;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.welcome{
+    margin: 0;
+    width: 100%;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.welcome header{
+    background-color: transparent;
+    display: inline;
+}
+
+ul{
+    width: fit-content;
+    height: 15%;
+    text-align: left;
+    background-color: transparent;
+    margin: 0 0 0 20vh;
+}
+
+li{
+    display: inline;
+    color: white;
+}
+
+.nav-links{
+    display: inline-block;
+    height: 100%;
+    font-size: 2.5vh;
+    color: white;
+    padding: 5vh 2vh;
+    margin: 5vh 1vh;
+    text-decoration: none;
+    transition-duration: .5s;
+    opacity: .5;
+}
+
+.nav-links:hover{
+    opacity: 1;
+}
+
+.icon-container{
+    display: inline;
+    margin-left: 50vh;
+}
+
+.icon{
+    color: white;
+    display: inline;
+    margin: 1vh;
+}
+
+.end{
+    width: 100%;
+    text-align: center;
+}
+
+.main{
+    background-color: transparent;
+    margin-bottom: 3vh;
+    margin-top: 15vh;
+}
+
+.main .img{
+    width: 100%;
+    text-align: center;
+}
+
+.main img{
+    transform: rotate(180deg);
+}
+
+.main h1{
+    color: white;
+    text-align: center;
+    margin: 5vh;
+    font-size: 5vh;
+}
+
+.info{
+    margin: 0;
+    width: 100%;
+    height: fit-content;
+    background-color: transparent;
+}
+
+.row {
+    height: fit-content;
+    background-color: transparent;
+    margin-left: 35vh;
+    margin-right: 35vh;
+    margin-bottom: 5vh;
+    padding: 2vh;
+}
+  
+.column {
+  float: left;
+  width: 45%;
+  height: fit-content;
+  background-color: transparent;
+  margin: 2vh;
+  padding: 1vh;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+p{
+    font-size: large;
+}
+
+.song-title{
+    margin: 2vh 0 2vh 0;
+    font-size: large;
+    color: rgb(182, 182, 182);
+}
+
+.song-img{
+    text-align: center;
+}
+
+.song-name{
+    text-align: center;
+    font-size: 3.5vh;
+    color: rgb(207, 207, 207);
+    margin: 1vh;
+}
+
+.song-credit{
+    text-align: center;
+    font-size: 2.5vh;
+    color: rgb(207, 207, 207);
+    margin: 1vh;
+}
+
+.play-song{
+    background-color: transparent;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 2vh;
+}
+
+.second-song{
+    background-color: blue;
+    color: white;
+    display: inline;
+}
+
+.sec{
+    font-size: 2vh;
+}
+
+.fa-play{
+    padding: 1vh;
+    opacity: 0;
+    font-size: 0;
+    transition-duration: .2s;
+}
+
+.appear2{
+    font-size: 2vh;
+    opacity: 1;
+}
+
+.mv{
+    height: fit-content;
+}
+
+.mv h1{
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.photo{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: fit-content;
+}
+
+.photo h1{
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.photo-container{
+    text-align: center;
+    width: 70%;
+    height: fit-content;
+}
+
+.mySlides {
+    display:none;
+    margin:auto;
+    border: .8vh solid black;
+}
+
+.w3-left, .w3-right {
+    cursor:pointer;
+    font-size: 5vh;
+    transition-duration: .5s;
+}
+
+.w3-left:hover, .w3-right:hover {
+    color: gold;
+}
+
+.w3-left{
+    float: left;
+}
+
+.w3-right{
+    float: right;
+}
+
+.photo .img{
+    margin-top: 15vh;
+    margin-bottom: 10vh;
+}
+
+.credit{
+    color: white;
+    display: block;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.credit .icon-container{
+    margin-left: 0;
+}
+
+.followus{
+    margin: 1vh;
+}
+
+.last{
+    padding-bottom: 5vh;
+}
+
+.credit a{
+    color: white;
+    text-decoration: none;
+}
