@@ -224,7 +224,13 @@ li{
 }
 
 .end{
-    width: 100%;
+    max-width: 100%;
+    text-align: center;
+}
+
+.end img{
+    max-width: 100%;
+    height: auto;
     text-align: center;
 }
 
@@ -417,3 +423,25 @@ p{
     color: white;
     text-decoration: none;
 }
+
+.song-img img{
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .icon-container{
+        display: block;
+    }
+    ul{
+        margin: 0 0 10vh 10vh;
+    }
+    .row {
+        margin-left: 15vh;
+        margin-right: 15vh;
+    }
+    .column {
+        width: 100%;
+      }
+  }
